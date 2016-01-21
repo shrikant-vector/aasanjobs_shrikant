@@ -1,0 +1,82 @@
+1) Help Sheeba out 									    10 marks
+
+Sheeba was asked by a Recruiter to write down 100 numbers (1-100) randomly 
+but making sure that no number is repeated twice. At the end, the Recruiter found 
+out that Sheeba had done her work perfectly, but committed just one mistake of 
+repeating a number twice. Recruiter asked Sheeba that she recruiter her only 
+under one condition! If Sheeba is able to find out the only number which she is 
+repeated in an optimised manner.
+
+Can you write a pseudocode, which can help Sheeba to find out the number which 
+
+got repeated twice?
+
+Ans:1
+Int find duplicate()
+{
+Vector<int>array;
+For(i=0;i<100;i++)
+{
+Int val;
+Cin>>val;
+Array.push_back(val);
+}
+Array.sort(array.begin(),array.end());// I just sort the array and duplicate no find in consec post
+i=1;
+while(i<array.size())
+{
+If(a[i]==a[i-1])
+Return a[i];//return  repeated element
+Else
+I++;
+}
+Return -1;//return -1 if no duplicate
+}
+
+2) Design a website for a travel company						     15 marks
+
+(Having the following requirements)
+a. User will have to select an origin and destination location.
+b. User will have to select from and to date.
+c. Display some high resolution images as preview of the location when user 
+d. Show list of all travel destinations available for the selected time frame as hits submit.
+    -> Recommendation (List size 1<=N<=50).
+e. Show fares and other expenses.
+
+You are supposed to write code in HTML and JavaScript. Syntax is not a problem, 
+your understanding of the problem statement and approach to the same is of primary concern.
+
+
+3) Closest to zero 									    20 Marks
+
+This problem is also called minimum absolute sum pair. You are given an array of integers, containing both +ve and -ve numbers. You need to find the two elements such that their sum is closest to zero. eg. Array [15, 5, -20, 30, -45] Output should be 15, -20.
+
+Note: We want the sum to be closest to zero not minimum. The minimum in the above example would be (-20, -45), but that is incorrect.
+
+
+Ans 3:
+Vector<int>array;
+Array.sort(array.begin(),array.end());
+Int n=array.size();
+Int i=0,j=n-1;
+Int mins=0,mine=n-1,min=INT_MAX;
+Int min=INT_MAX;
+While(i<j)//binary search;
+{
+Int v=array[j]-array[i];
+If(v-0<min-0)
+{
+Min=v;
+Mins=I;
+Mine=j;
+If((v-0<0))
+I++;
+Else
+j--;
+}
+}
+Vector<int>ans;
+Ans.push_back(array[i]);
+Ans.push_back(array[j]);
+Return ans;
+}
